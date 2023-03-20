@@ -27,5 +27,11 @@ export class OrbitCountsComponent implements OnInit {
 	return count;
  }
 
+ countTotal(): number {
+	const table = document.querySelector("table");
+	const rowCount = table.rows.length;
+	return rowCount - 1;
+ }
+
 
 }

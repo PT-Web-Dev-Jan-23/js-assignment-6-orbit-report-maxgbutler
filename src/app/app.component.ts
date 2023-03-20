@@ -6,6 +6,7 @@ import { Satellite } from './satellite';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'orbit-report';
 
@@ -31,6 +32,7 @@ export class AppComponent {
 
 				 // make a copy of the sourceList to be shown to the user
 				 this.displayList = this.sourceList.slice(0);
+				 window.console.log(this.displayList);
 	  
 			}.bind(this));
 		}.bind(this));
